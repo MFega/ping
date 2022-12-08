@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+ 
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container{
+    margin: 40px;
+}
+
+.intro{
+    color: hsl(209, 33%, 12%);
+    margin: 30px 0;
+}
+
+.intro h2{
+    font-weight: 300;
+    color: hsl(0, 0%, 59%) ;
+    font-size: 30px;
+}
+
+.intro span{
+    font-weight: 600;
+    color: hsl(209, 33%, 12%);
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 15px 20px;
+    border-radius: 25px;
+    border-color:hsl(223, 100%, 88%) ;
+    margin-bottom: 15px
+}
+
+::placeholder{
+    color: hsl(223, 100%, 88%);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 15px;
+}
+
+button{
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: hsl(223, 87%, 63%);
+    color: white;
+    font-size: 16px;
+    border: none;
+    box-shadow: 5px 7px 7px hsl(223, 100%, 88%);
+    margin-top: 15px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#message{
+    text-align: center;
+    color: hsl(354, 100%, 66%);
+    transform: translateY(-70px);
+}
+
+.chart{
+    width: 100%;
+    margin: 70px 0 100px;
+}
+
+.chart img{
+    width: 100%;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-cont{
+background: white;
+border: 1px solid hsl(223, 100%, 88%);
+width: 25px;
+height: 25px;
+border-radius: 50%;
+display: flex;
+align-items:center ;
+justify-content: center;
+margin-right: 10px;
+}
+
+.social-cont:hover{
+background: hsl(223, 87%, 63%);
+cursor: pointer;
+}
+
+.fa{
+    color: hsl(223, 87%, 63%);
+}
+
+.fa:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.copyright{
+    margin: 20px;
+}
+
+.copyright p{
+    font-size: 15px;
+    color: hsl(0, 0%, 59%);
+}
+
+@media screen and (min-width:768px){
+    body{
+        min-height: 100vh;
+    }
+
+    .container{
+        margin: 40px 100px;
+    }
+
+    .input{
+        display: block;
+    }
+
+    input{
+        padding-right:150px ;
+    }
+
+    button{
+        padding: 15px 30px;
+        margin-top: none;
+    }
+
+    .chart img{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #message{
+        transform: translateX(-80px);
+    }
+}
